@@ -1,5 +1,13 @@
-PATH
-  remote: /Users/aris/Proiecte/rails/kanria/test-ka-mod-users
+GIT
+  remote: git@github.com:arisro/test-ka-ext-users.git
+  revision: f4426c1a505c52302477e7168fbe4e758a8785ec
+  specs:
+    ka_ext_users (0.0.1)
+      rails (~> 4.0.0)
+
+GIT
+  remote: git@github.com:arisro/test-ka-mod-users.git
+  revision: b3ed28f7038241a0d12b93e448bca93c3b1a45e8
   specs:
     ka_mod_users (0.0.1)
       rails (~> 4.0.0)
@@ -107,6 +115,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   debugger
   jbuilder
+  ka_ext_users!
   ka_mod_users!
   rails (= 4.0.0)
   rails-api
