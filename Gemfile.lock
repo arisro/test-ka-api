@@ -1,3 +1,9 @@
+PATH
+  remote: /Users/aris/Proiecte/rails/kanria/test-ka-mod-users
+  specs:
+    ka_mod_users (0.0.1)
+      rails (~> 4.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -101,6 +107,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   debugger
   jbuilder
+  ka_mod_users!
   rails (= 4.0.0)
   rails-api
   unicorn

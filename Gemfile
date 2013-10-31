@@ -19,3 +19,6 @@ gem 'unicorn'
 group :development, :test do
 	gem 'debugger'
 end
+
+# gem 'ka_mod_users', :path => '/Users/aris/Proiecte/rails/kanria/test-ka-mod-users'
+gem 'ka_mod_users', :git => 'git@github.com:arisro/test-ka-mod-users.git'
