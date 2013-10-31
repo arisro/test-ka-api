@@ -1,5 +1,5 @@
 # config/unicorn.rb
-APP_PATH = "/Users/aris/Proiecte/rails/kanria/test-ka-api"
+APP_PATH = "/path/to/your/app/root/folder"
 
 worker_processes 2
 timeout 30
