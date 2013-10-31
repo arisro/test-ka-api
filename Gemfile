@@ -21,7 +21,7 @@ group :development, :test do
 end
 
 #gem 'ka_mod_users', :path => '/Users/aris/Proiecte/rails/kanria/test-ka-mod-users'
-gem 'ka_mod_users', :git => 'git@github.com:arisro/test-ka-mod-users.git'
+gem 'ka_mod_users', :github => 'arisro/test-ka-mod-users'
 
 #gem 'ka_ext_users', :path => '/Users/aris/Proiecte/rails/kanria/test-ka-ext-users'
-gem 'ka_ext_users', :git => 'git@github.com:arisro/test-ka-ext-users.git'
+gem 'ka_ext_users', :github => 'arisro/test-ka-ext-users'
