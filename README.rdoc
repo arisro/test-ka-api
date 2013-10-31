@@ -1,1 +1,3 @@
 == README
+
+http://ka-static.herokuapp.com/
