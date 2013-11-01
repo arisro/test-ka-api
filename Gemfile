@@ -16,12 +16,10 @@ gem 'jbuilder'
 # Use unicorn as the app server
 gem 'unicorn'
 
-group :development, :test do
-	gem 'debugger'
+if ENV["RAILS_ENV"] == "development"
+	gem 'ka_mod_users', :path => '/var/www/kanria-front/ka-mod-users'
+	gem 'ka_ext_users', :path => '/var/www/kanria-front/ka-ext-users'
+else
+	gem 'ka_mod_users', :github => 'arisro/test-ka-mod-users'
+	gem 'ka_ext_users', :github => 'arisro/test-ka-ext-users'
 end
-
-#gem 'ka_mod_users', :path => '/Users/aris/Proiecte/rails/kanria/test-ka-mod-users'
-gem 'ka_mod_users', :github => 'arisro/test-ka-mod-users'
-
-#gem 'ka_ext_users', :path => '/Users/aris/Proiecte/rails/kanria/test-ka-ext-users'
-gem 'ka_ext_users', :github => 'arisro/test-ka-ext-users'

@@ -1,5 +1,5 @@
 # config/unicorn.rb
-APP_PATH = "/Users/aris/Proiecte/rails/kanria/test-ka-api"
+APP_PATH = "/var/www/kanria-front/ka-api"
 
 worker_processes 2
 timeout 30
@@ -14,11 +14,11 @@ stderr_path APP_PATH + "/log/unicorn.stderr.log"
 stdout_path APP_PATH + "/log/unicorn.stdout.log"
 
 before_fork do |server, worker|
-  defined?(ActiveRecord::Base) and
-    ActiveRecord::Base.connection.disconnect!
+  #defined?(ActiveRecord::Base) and
+  #  ActiveRecord::Base.connection.disconnect!
 end 
 
 after_fork do |server, worker|
-  defined?(ActiveRecord::Base) and
-    ActiveRecord::Base.establish_connection
+  #defined?(ActiveRecord::Base) and
+  #  ActiveRecord::Base.establish_connection
 end
