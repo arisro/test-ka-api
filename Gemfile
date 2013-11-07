@@ -16,7 +16,7 @@ gem 'jbuilder'
 # Use unicorn as the app server
 gem 'unicorn'
 
-if ENV["RAILS_ENV"] == "development"
+if ENV["MODS_SRC"] == "local"
 	gem 'ka_mod_users', :path => '/var/www/kanria-front/ka-mod-users'
 	gem 'ka_ext_users', :path => '/var/www/kanria-front/ka-ext-users'
 else

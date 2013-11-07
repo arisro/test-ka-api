@@ -8,6 +8,12 @@ require 'action_mailer/railtie'
 require 'rails/test_unit/railtie'
 require 'sprockets/railtie'
 
+module KaApi
+    def self.root
+        File.expand_path(File.join(File.dirname(__FILE__),'../'))
+    end
+end
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
