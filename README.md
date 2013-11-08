@@ -12,8 +12,10 @@ This allows us to have the application root path in rake tasks inside the gems.
 
 #### Installation
 - include in the Gemfile the extensions and moules that you want to mount on this instance:
+
 ```ruby
 gem 'ka_mod_users', :github => 'arisro/test-ka-mod-users'
+
 gem 'ka_ext_users', :github => 'arisro/test-ka-ext-users'
 ```
 - *bundle install*  
